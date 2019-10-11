@@ -64,6 +64,7 @@
             </div>
           </qrcode-drop-zone>
           <qrcode-stream
+            v-if="isMobile()"
             @decode="onDecode"
             @init="onInit">
           </qrcode-stream>
